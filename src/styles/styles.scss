@@ -17,13 +17,29 @@ html{
   text-decoration: none;
 }
 
+:root {
+  --swiper-theme-color: #ffa826;
+}
+
 body{
   background:#f8f8f8;
+}
+
+.mySwiper{
+  padding:3rem .25rem;
+}
+
+.slide{
+  height:350px;
+  background:white;
+  border-radius: 10px;
+  box-shadow: 0px 2px 15px rgba(0,0,0 , 0.15)
 }
 
 @import "./navbar.scss";
 @import "./home.scss";
 @import "./menu.scss";
+@import "./about.scss";
 @import "./contact.scss";
 @import "./btn.scss";
 @import "./footer.scss";

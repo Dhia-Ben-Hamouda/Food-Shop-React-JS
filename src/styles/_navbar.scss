@@ -12,6 +12,7 @@ nav{
   top:0px;
   background:#f8f8f8;
   transition: .3s;
+  z-index: 555555;
 
   .website{
     display: flex;
@@ -77,6 +78,10 @@ nav{
       }
     }
 
+    .link{
+      height:30px;
+    }
+
     .num{
       background:#fff;
       width:20px;
@@ -93,7 +98,7 @@ nav{
       color:$secondary;
     }
 
-    a{
+    a:not(.link){
       display: flex;
       background:$primary;
       align-items: center;

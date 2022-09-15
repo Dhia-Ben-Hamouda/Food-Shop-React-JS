@@ -38,14 +38,16 @@ export default function(){
           <a href="#contact">Contact</a>
         </ul>
         <div className="container">
-          <a href="#">
+          <a href="/auth">
             <FaUser />
             <h3>Sign in</h3>
           </a>
-          <FaShoppingBag className="icon"/>
-          <div className="num">
-            0
-          </div>
+          <a href="/cart" className="link">
+            <FaShoppingBag className="icon"/>
+            <div className="num">
+              0
+            </div>
+          </a>
         </div>
       </nav>
     </>

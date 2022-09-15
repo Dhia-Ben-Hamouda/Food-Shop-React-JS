@@ -1,0 +1,24 @@
+#about{
+  padding:2rem 10vw;
+  min-height:80vh;
+
+  .header{
+    text-align: center;
+
+    h1{
+      color:$primary;
+      margin-bottom:.5rem;
+    }
+
+    h3{
+      color:$secondary;
+      font-weight: 400;
+    }
+  }
+
+  .container{
+    min-height: calc(80vh - 73px);
+    display: flex;
+    align-items: center;
+  }
+}
