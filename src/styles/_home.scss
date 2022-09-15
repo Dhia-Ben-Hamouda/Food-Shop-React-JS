@@ -1,0 +1,56 @@
+#home{
+  padding:2rem 10vw;
+  min-height: calc(100vh - 112px);
+  display: flex;
+
+  .container{
+    display: flex;
+    width: 100%;
+
+    .wrapper{
+      width:50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      .text{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap:1.25rem;
+  
+        h1{
+          color:$primary;
+          font-size: 2.5rem;
+          width:80%;
+        }
+  
+        h3{
+          color:$secondary;
+          font-weight: 400;
+          font-size: 1.25rem;
+          width:60%;
+          line-height: 2.5rem;
+        }
+
+        a{
+          display: inline-block;
+          background:$primary;
+          padding:1rem 1.25rem;
+          color:white;
+          border-radius: 7px;
+        }
+      }
+    }
+
+    .image{
+      width:50%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      img{
+        width:80%;
+      }
+    }
+  }
+}
