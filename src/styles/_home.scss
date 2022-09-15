@@ -64,3 +64,51 @@
     }
   }
 }
+
+
+@media(max-width:1024px)
+{
+
+}
+
+
+@media(max-width:640px)
+{
+  
+
+  #home{
+    padding:1rem 8vw;
+
+    .container{
+      flex-direction: column;
+
+      .wrapper{
+        width:100%;
+        margin-bottom: 1.5rem;
+
+        .text{
+          align-items: center;
+          h1{
+            width:100%;
+            font-size: 1.5rem;
+            text-align: center;
+          }
+
+          h3{
+            width:100%;
+            font-size: 1.15rem;
+            text-align: center;
+          }
+        }
+      }
+
+      .image{
+        width: 100%;
+        justify-content: center;
+      }
+    }
+
+  }
+
+
+}

@@ -1,0 +1,22 @@
+.btn{
+  background:$primary;
+  height:35px;
+  width: 35px;
+  position:fixed;
+  bottom:25px;
+  right:35px;
+  color:white;
+  border:none;
+  outline:none;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: .5s;
+}
+
+.visible{
+  opacity: 1;
+  cursor: pointer;
+}

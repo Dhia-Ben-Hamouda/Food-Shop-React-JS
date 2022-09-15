@@ -103,7 +103,28 @@ nav{
       }
 
     }
+  }
+}
+
+@media(max-width:1024px)
+{
+
+}
+
+@media(max-width:640px)
+{
+  nav{
+    padding:1.5rem 8vw;
+
+    .desktop-list{
+      display: none;
+    }
+
+    .container{
+      a{
+        display: none;
+      }
+    }
 
   }
-
 }

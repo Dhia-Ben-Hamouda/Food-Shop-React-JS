@@ -75,3 +75,33 @@
     }
   }
 }
+
+@media(max-width:1024px)
+{
+
+}
+
+@media(max-width:640px)
+{
+  #contact{
+    padding:1rem 8vw;
+
+    .container{
+      flex-direction: column;
+
+      form{
+        width:100%;
+      }
+
+      .illustration{
+        width: 100%;
+        justify-content: center;
+
+        img{
+          scale: .7;
+        }
+      }
+    }
+
+  }
+}
