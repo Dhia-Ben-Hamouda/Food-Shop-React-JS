@@ -12,10 +12,10 @@ export default function(){
           <h1>Food Shop</h1>
         </div>
         <ul className="desktop-list">
-          <a href="#">Home</a>
-          <a href="#">Menu</a>
-          <a href="#">About</a>
-          <a href="#">Contact</a>
+          <a href="#home">Home</a>
+          <a href="#menu">Menu</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
         </ul>
         <div className="container">
           <a href="#">

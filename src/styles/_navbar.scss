@@ -23,7 +23,7 @@ nav{
   .desktop-list{
     display: flex;
     align-items: center;
-    gap:.75rem;
+    gap:1.5rem;
 
     a{
       color:$primary;
@@ -59,6 +59,12 @@ nav{
       width:2rem;
       height:2rem;
       color:$primary;
+      cursor: pointer;
+      transition: .3s;
+      
+      &:hover{
+        color:#D98201;
+      }
     }
 
     .num{
@@ -73,6 +79,8 @@ nav{
       position: absolute;
       right:-5px;
       bottom:0px;
+
+      color:$secondary;
     }
 
     a{
@@ -83,10 +91,17 @@ nav{
       border-radius: 7px;
       color:white;
       gap:.5rem;
+      transition: .3s;
+
       h3{
         font-weight: 400;
         font-size: 1rem;
       }
+
+      &:hover{
+        background:#D98201;
+      }
+
     }
 
   }

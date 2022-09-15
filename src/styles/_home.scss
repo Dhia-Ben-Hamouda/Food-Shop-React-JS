@@ -33,11 +33,21 @@
         }
 
         a{
-          display: inline-block;
+          display: flex;
           background:$primary;
-          padding:1rem 1.25rem;
+          padding:1rem;
           color:white;
           border-radius: 7px;
+          gap:.75rem;
+          transition: .3s;
+
+          h5{
+            font-weight: 400;
+          }
+
+          &:hover{
+            background:#D98201;
+          }
         }
       }
     }
