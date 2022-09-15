@@ -25,7 +25,43 @@
 
     form{
       width:50%;
-      background:gold;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap:.75rem;
+
+      button{
+        background:$primary;
+        color:white;
+        cursor: pointer;
+        transition: .3s;
+
+        &:hover{
+          background:#D98201;
+        }
+      }
+
+      textarea{
+        resize:none;
+      }
+
+      input , textarea , button{
+        border:none;
+        outline:none;
+        padding:1.25rem;
+        border-radius: 5px;
+        box-shadow: 0px 2px 12px rgba(0,0,0, 0.15);
+      }
+
+      div{
+        display: flex;
+        gap:.75rem;
+
+        input{
+          width:50%;
+        }
+
+      }
     }
 
     .illustration{
