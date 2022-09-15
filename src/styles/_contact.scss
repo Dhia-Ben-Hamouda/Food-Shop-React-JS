@@ -1,0 +1,41 @@
+#contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding:2rem 10vw;
+  gap:3rem;
+
+  .header{
+    text-align: center;
+
+    h1{
+      color:$primary;
+      margin-bottom:.5rem;
+    }
+
+    h3{
+      color:$secondary;
+      font-weight: 400;
+    }
+  }
+
+  .container{
+    width:100%;
+    display: flex;
+
+    form{
+      width:50%;
+      background:gold;
+    }
+
+    .illustration{
+      width:50%;
+      display: flex;
+      justify-content: flex-end;
+
+      img{
+        width:80%;
+      }
+    }
+  }
+}
