@@ -11,12 +11,12 @@ export default function () {
   return (
     <>
       <section id="contact">
-        <div className="header">
+        <div className="header" data-aos="fade-down" data-aos-delay="600">
           <h1>Contact</h1>
           <h3>Get in touch</h3>
         </div>
         <div className="container">
-          <form>
+          <form data-aos="fade-right" data-aos-delay="400">
             <div>
               <input
                 type="text"
@@ -46,7 +46,7 @@ export default function () {
             />
             <button>Send message</button>
           </form>
-          <div className="illustration">
+          <div className="illustration" data-aos="fade-left" data-aos-delay="400">
             <img src={illustration} />
           </div>
         </div>
