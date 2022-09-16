@@ -10,7 +10,7 @@ export default function () {
           <h3>What our customers had to say about us</h3>
         </div>
         <div className="container">
-          <Slider/>
+          <Slider />
         </div>
       </section>
     </>

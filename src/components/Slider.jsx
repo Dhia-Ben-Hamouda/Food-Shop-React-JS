@@ -1,53 +1,71 @@
 import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation } from "swiper";
+import { Pagination } from "swiper";
 import "swiper/css/pagination";
-import "swiper/css/navigation";
 import "swiper/css";
 
 export default function App() {
   return (
     <>
       <Swiper
-        slidesPerView={3}
+        slidesPerView={ window.innerWidth > 768 ? 3 : 1}
         spaceBetween={30}
-        slidesPerGroup={3}
+        grabCursor={true}
+        slidesPerGroup={window.innerWidth > 768 ? 3 : 1}
         loop={true}
         loopFillGroupWithBlank={true}
         pagination={{
           clickable: true,
         }}
-        navigation={false}
-        modules={[Pagination, Navigation]}
+        modules={[Pagination]}
         className="mySwiper"
       >
         <SwiperSlide className="slide">
+          <div className="top">
 
+          </div>
         </SwiperSlide>
         <SwiperSlide className="slide">
+          <div className="top">
 
+          </div>
         </SwiperSlide>
         <SwiperSlide className="slide">
+          <div className="top">
 
+          </div>
         </SwiperSlide>
         <SwiperSlide className="slide">
+          <div className="top">
 
+          </div>
         </SwiperSlide>
         <SwiperSlide className="slide">
+          <div className="top">
 
+          </div>
         </SwiperSlide>
         <SwiperSlide className="slide">
+          <div className="top">
 
+          </div>
         </SwiperSlide>
         <SwiperSlide className="slide">
+          <div className="top">
 
+          </div>
         </SwiperSlide>
         <SwiperSlide className="slide">
+          <div className="top">
 
+          </div>
         </SwiperSlide>
         <SwiperSlide className="slide">
+          <div className="top">
 
+          </div>
         </SwiperSlide>
+        
       </Swiper>
     </>
   );

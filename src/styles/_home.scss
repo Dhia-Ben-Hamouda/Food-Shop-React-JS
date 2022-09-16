@@ -87,17 +87,22 @@
         margin-bottom: 1.5rem;
 
         .text{
-          align-items: center;
+          
           h1{
-            width:100%;
-            font-size: 1.5rem;
-            text-align: center;
+            width:80%;
+            font-size: 1.2rem;
+            
           }
 
           h3{
-            width:100%;
-            font-size: 1.15rem;
-            text-align: center;
+            width:80%;
+            font-size: .9rem;
+          }
+
+          a{
+            h5{
+              font-size: .75rem;
+            }
           }
         }
       }
