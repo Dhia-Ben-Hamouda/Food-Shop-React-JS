@@ -21,8 +21,7 @@ export default function () {
     return () => { document.removeEventListener("scroll", toggleAnimation); }
   }, []);
 
-  function clickHandler()
-  {
+  function clickHandler() {
     document.querySelector(".mobile-list").classList.toggle("opened");
     document.querySelector(".bars").classList.toggle("clicked");
   }
@@ -41,10 +40,21 @@ export default function () {
           <a href="#contact">Contact</a>
         </ul>
         <ul className="mobile-list">
-          <a href="#home">Home</a>
-          <a href="#menu">Menu</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
+          <div>
+
+          </div>
+          <div className="list">
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <a href="/auth">
+            <FaUser />
+            <h3>
+              Sign in
+            </h3>
+          </a>
         </ul>
         <div className="wrap">
           <div className="container">

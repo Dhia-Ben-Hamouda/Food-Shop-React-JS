@@ -132,8 +132,14 @@ nav {
 @media(max-width:1024px) {}
 
 @media(max-width:640px) {
+  nav.sticky {
+    background: white;
+    padding: 1rem 8vw;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+  }
+
   nav {
-    padding: 1.5rem 8vw;
+    padding: 1.75rem 8vw;
 
     .mobile-list{
       background:$primary;
@@ -146,14 +152,36 @@ nav {
       z-index:999999999999;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      justify-content: space-between;
       transition: .5s;
       overflow: hidden;
 
-      a{
-        color:white;
-        margin-bottom: 1rem;
+      .list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        a{
+          color:white;
+          margin-bottom: 1rem;
+        }
       }
+
+      a:not(.list a){
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+        gap:.25rem;
+        color:white;
+
+        h3{
+          color:white;
+          font-weight: 400;
+          font-size:1rem;
+        }
+      }
+
+      
     }
 
     .mobile-list.opened{
