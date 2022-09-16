@@ -2,7 +2,9 @@ import * as actionTypes from "../constants/actionTypes.js";
 import produce from "immer";
 
 const initialState = {
-
+  items:[],  // { id , name , price , picture , quantity }
+  quantity:0,
+  total:0
 }
 
 export default function reducer(state = initialState , action){

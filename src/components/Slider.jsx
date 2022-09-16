@@ -66,7 +66,6 @@ export default function App() {
             <h3>Customer name</h3>
           </div>
         </SwiperSlide>
-
         <SwiperSlide className="slide">
           <div className="top">
             <ImQuotesRight className="icon"/>
@@ -103,8 +102,6 @@ export default function App() {
             <h3>Customer name</h3>
           </div>
         </SwiperSlide>
-
-
         <SwiperSlide className="slide">
           <div className="top">
             <ImQuotesRight className="icon"/>
@@ -141,10 +138,6 @@ export default function App() {
             <h3>Customer name</h3>
           </div>
         </SwiperSlide>
-
-        
-        
-        
       </Swiper>
     </>
   );
