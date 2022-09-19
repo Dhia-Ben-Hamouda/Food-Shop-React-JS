@@ -2,7 +2,6 @@ import React from "react";
 import { Routes , Route } from "react-router-dom";
 import LandingPage from "./LandingPage.jsx";
 import Auth from "./Auth.jsx";
-import Cart from "./Cart.jsx";
 import Api from "./InsertItem.jsx";
 import Aos from "aos";
 import { useEffect } from "react";

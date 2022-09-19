@@ -13,10 +13,41 @@ nav.sticky {
   width:0%;
   z-index:99999999999999999999999;
   transition: .5s;
-
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
+  .bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
+    h3{
+      font-weight: 700;
+      color:$secondary;
+
+      span{
+        color:red;
+        font-weight: 600;
+      }
+    }
+
+    button{
+      background:$primary;
+      border:none;
+      outline:none;
+      color:white;
+      padding:.75rem 1.75rem;
+      border-radius:8px;
+      cursor:pointer;
+      transition: .3s;
+
+      &:hover{
+        background:#D98201;
+      }
+    }
+  }
 }
 
 .cart.translated{

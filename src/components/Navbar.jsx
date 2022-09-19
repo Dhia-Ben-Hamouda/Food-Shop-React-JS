@@ -89,7 +89,16 @@ export default function () {
         </div>
       </nav>
       <div className="cart">
-        <FaTimes className="icon" size="1.25rem" color="#777" />
+        <div className="top">
+          <FaTimes onClick={closeHandler} className="icon" size="1.25rem" color="#777" />
+          <div className="cart-items">
+            <div className="item"></div>
+          </div>
+        </div>
+        <div className="bottom">
+          <h3>Total :<span> 244 $</span></h3>
+          <button>Checkout</button>
+        </div>
       </div>
     </>
   )
