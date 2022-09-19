@@ -25,6 +25,27 @@ body{
   background:#f8f8f8;
 }
 
+#root{
+  position:relative;
+}
+
+.filter{
+  position:absolute;
+  top:0px;
+  z-index:55555555;
+  background:rgba(0,0,0 , 0.5);
+  height:100%;
+  width:100%;
+  opacity: 0;
+  transition: .5s;
+  visibility: hidden;
+}
+
+.filter.seen{
+  opacity:1;
+  visibility: visible;
+}
+
 .mySwiper{
   padding:3rem .25rem;
 }

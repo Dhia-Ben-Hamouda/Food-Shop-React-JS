@@ -3,6 +3,7 @@ import burger from "../images/burger.png";
 import { FaUser } from "react-icons/fa";
 import { FaShoppingBag } from "react-icons/fa";
 import { useEffect } from "react";
+import { FaTimes } from "react-icons/fa";
 
 export default function () {
 
@@ -26,8 +27,19 @@ export default function () {
     document.querySelector(".bars").classList.toggle("clicked");
   }
 
+  function handler(){
+    document.querySelector(".filter").classList.toggle("seen");
+    document.querySelector(".cart").classList.toggle("translated");
+  }
+
+  function closeHandler(){
+    document.querySelector(".filter").classList.toggle("seen");
+    document.querySelector(".cart").classList.toggle("translated");
+  }
+
   return (
     <>
+      <div className="filter" onClick={closeHandler}></div>
       <nav>
         <div className="website">
           <img src={burger} alt="" />
@@ -62,12 +74,12 @@ export default function () {
               <FaUser />
               <h3>Sign in</h3>
             </a>
-            <a href="/cart" className="link">
+            <div onClick={handler}>
               <FaShoppingBag className="icon" />
               <div className="num">
                 0
               </div>
-            </a>
+            </div>
           </div>
           <div className="bars" onClick={clickHandler} >
             <div className="bar"></div>
@@ -76,6 +88,9 @@ export default function () {
           </div>
         </div>
       </nav>
+      <div className="cart">
+        <FaTimes className="icon" size="1.25rem" color="#777" />
+      </div>
     </>
   )
 }

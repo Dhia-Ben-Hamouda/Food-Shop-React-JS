@@ -19,7 +19,6 @@ export default function(){
       <Routes>
         <Route path="/" element={ <LandingPage/> } />
         <Route path="/auth" element={ <Auth/> } />
-        <Route path="/cart" element={ <Cart/> } />
         <Route path="/insertItem" element={ <Api/> } />
       </Routes>
     </>
