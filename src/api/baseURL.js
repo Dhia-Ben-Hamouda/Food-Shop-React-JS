@@ -1,4 +1,4 @@
 const local = "http://localhost:5000";
-const cloud = "";
+const cloud = "https://food-shop-react-js.herokuapp.com";
 
-export default local; 
+export default cloud; 
