@@ -1,14 +1,13 @@
 import React from "react";
-import burger from "../images/burger.png";
 
-export default function({delay}){
+export default function({delay , name , picture , price , id}){
   return(
     <>
       <div className="item" data-aos="fade-down" data-aos-delay={delay}>
-        <img src={burger} />
+        <img src={picture} />
         <div>
-          <h1>Chicken burger</h1>
-          <h3>25 $</h3>
+          <h1>{name}</h1>
+          <h3>{price} $</h3>
         </div>
         <button>Add To Cart</button>
       </div>

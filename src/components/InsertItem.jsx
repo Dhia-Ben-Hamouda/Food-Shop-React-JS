@@ -14,7 +14,7 @@ export default function(){
   {
     e.preventDefault();
 
-    const response = await fetch(`${Api}/item/insertItem`,{
+    const response = await fetch(`${Api}/items/insertItem`,{
       method:"POST",
       headers:{
         "content-type":"application/json"
@@ -54,7 +54,7 @@ export default function(){
           value={type}
           onChange={(e)=>{setType(e.target.value)}}
         />
-        <Button variant="contained">Insert item</Button>
+        <Button type="submit" variant="contained">Insert item</Button>
       </form>
     </>
   )
