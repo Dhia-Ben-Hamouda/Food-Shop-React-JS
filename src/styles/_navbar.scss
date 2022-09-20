@@ -287,8 +287,27 @@ nav {
 @media(max-width:640px) {
   nav.sticky {
     background: white;
-    padding: 1.75rem 8vw;
+    padding: 1.25rem 8vw;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+  }
+
+  .cart.translated{
+    width:100%;
+    padding: 1.75rem 1.25rem 1rem;
+  }
+
+  .cart{
+    .top{
+      .cart-items{
+        .item{
+          .left{
+            h3{
+              font-size: .75rem;
+            }
+          }
+        }
+      }
+    }
   }
 
   nav {

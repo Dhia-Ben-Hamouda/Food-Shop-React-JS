@@ -2,29 +2,40 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../app/actions/cartActions.js";
 
-export default function({delay , name , picture , price , id}){
+export default function ({ delay, name, picture, price, id }) {
   const dispatch = useDispatch();
 
-  function add(){
+  function add() {
     dispatch(addToCart({
       name,
       price,
       id,
       picture,
-      quantity:1
+      quantity: 1
     }))
   }
 
-  return(
+  return (
     <>
-      <div className="item" data-aos="fade-down" data-aos-delay={delay}>
-        <img src={picture} />
-        <div>
-          <h1>{name}</h1>
-          <h3>{price} $</h3>
+      {
+        window.innerWidth > 768 ? <>
+          <div className="item" data-aos="fade-down" data-aos-delay={delay}>
+            <img src={picture} />
+            <div>
+              <h1>{name}</h1>
+              <h3>{price} $</h3>
+            </div>
+            <button onClick={add}>Add To Cart</button>
+          </div>
+        </> : <div className="item">
+          <img src={picture} />
+          <div>
+            <h1>{name}</h1>
+            <h3>{price} $</h3>
+          </div>
+          <button onClick={add}>Add To Cart</button>
         </div>
-        <button onClick={add}>Add To Cart</button>
-      </div>
+      }
     </>
   )
 }
