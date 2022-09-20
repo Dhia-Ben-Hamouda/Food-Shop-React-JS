@@ -4,6 +4,7 @@ import { FaUser } from "react-icons/fa";
 import { FaShoppingBag } from "react-icons/fa";
 import { useEffect } from "react";
 import { FaTimes } from "react-icons/fa";
+import CartItem from "./CartItem.jsx";
 
 export default function () {
 
@@ -90,9 +91,19 @@ export default function () {
       </nav>
       <div className="cart">
         <div className="top">
-          <FaTimes onClick={closeHandler} className="icon" size="1.25rem" color="#777" />
+          <FaTimes onClick={closeHandler} className="icon"  />
           <div className="cart-items">
-            <div className="item"></div>
+            <CartItem/>
+            <CartItem/>
+            <CartItem/>
+            <CartItem/>
+            <CartItem/>
+            <CartItem/>
+            <CartItem/>
+            <CartItem/>
+            <CartItem/>
+            <CartItem/>
+            <CartItem/>
           </div>
         </div>
         <div className="bottom">
