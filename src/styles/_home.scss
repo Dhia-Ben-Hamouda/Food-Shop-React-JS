@@ -35,7 +35,7 @@
         a{
           display: flex;
           background:$primary;
-          padding:1rem;
+          padding:1rem .75rem;
           color:white;
           border-radius: 7px;
           gap:.75rem;
@@ -119,8 +119,11 @@
           }
 
           a{
+            padding:.8rem .75rem;
+            align-items: center;
+
             h5{
-              font-size: .75rem;
+              font-size: .65rem;
             }
           }
         }
@@ -129,6 +132,10 @@
       .image{
         width: 100%;
         justify-content: center;
+
+        img{
+          width: 70%;
+        }
       }
     }
 

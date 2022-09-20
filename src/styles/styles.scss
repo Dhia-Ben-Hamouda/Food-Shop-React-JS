@@ -94,6 +94,25 @@ body{
   }
 }
 
+
+
+@media(max-width:640px)
+{
+  .slide{
+    .middle{
+      p{
+        font-size: .75rem;
+      }
+    }
+
+    .bottom{
+      h3{
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
 @import "./navbar.scss";
 @import "./home.scss";
 @import "./menu.scss";
