@@ -1,22 +1,29 @@
 import React from "react";
-import meat from "../assets/meat.png";
 import { FaTrash } from "react-icons/fa";
+import { useDispatch } from "react-redux";
+import { removeFromCart } from "../app/actions/cartActions.js";
 
-export default function () {
+export default function ({name , id , price , picture , quantity}) {
+  const dispatch = useDispatch();
+
+  function remove(){
+    dispatch(removeFromCart(id));
+  }
+
   return (
     <>
       <div className="item">
         <div className="left">
-          <img src={meat} />
-          <h3>Meat Burger</h3>
+          <img src={picture} />
+          <h3>{name}</h3>
         </div>
         <div className="right">
           <div className="actions">
             <span className="minus">-</span>
-            <span className="number">1</span>
+            <span className="number">{quantity}</span>
             <span className="plus">+</span>
           </div>
-          <h4>40 $</h4>
+          <h4>{price * quantity} $</h4>
           <FaTrash className="trash"/>
         </div>
       </div>

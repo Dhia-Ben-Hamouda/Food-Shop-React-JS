@@ -4,9 +4,11 @@ import { FaUser } from "react-icons/fa";
 import { FaShoppingBag } from "react-icons/fa";
 import { useEffect } from "react";
 import { FaTimes } from "react-icons/fa";
+import { useSelector } from "react-redux";
 import CartItem from "./CartItem.jsx";
 
 export default function () {
+  const cartItems = useSelector(state => state.cart.items);
 
   useEffect(() => {
     function toggleAnimation() {
@@ -93,17 +95,20 @@ export default function () {
         <div className="top">
           <FaTimes onClick={closeHandler} className="icon"  />
           <div className="cart-items">
-            <CartItem/>
-            <CartItem/>
-            <CartItem/>
-            <CartItem/>
-            <CartItem/>
-            <CartItem/>
-            <CartItem/>
-            <CartItem/>
-            <CartItem/>
-            <CartItem/>
-            <CartItem/>
+            {
+              cartItems.map((item,index)=>{
+                return(
+                  <CartItem 
+                    key={index}
+                    id={item.id}
+                    name={item.name}
+                    price={item.price}
+                    quantity={item.quantity}
+                    picture={item.picture}
+                  />
+                )
+              })
+            }
           </div>
         </div>
         <div className="bottom">

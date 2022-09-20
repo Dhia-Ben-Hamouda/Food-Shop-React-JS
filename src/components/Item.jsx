@@ -1,6 +1,20 @@
 import React from "react";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../app/actions/cartActions.js";
 
 export default function({delay , name , picture , price , id}){
+  const dispatch = useDispatch();
+
+  function add(){
+    dispatch(addToCart({
+      name,
+      price,
+      id,
+      picture,
+      quantity:1
+    }))
+  }
+
   return(
     <>
       <div className="item" data-aos="fade-down" data-aos-delay={delay}>
@@ -9,7 +23,7 @@ export default function({delay , name , picture , price , id}){
           <h1>{name}</h1>
           <h3>{price} $</h3>
         </div>
-        <button>Add To Cart</button>
+        <button onClick={add}>Add To Cart</button>
       </div>
     </>
   )
