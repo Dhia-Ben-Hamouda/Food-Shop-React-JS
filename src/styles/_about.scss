@@ -22,3 +22,33 @@
     align-items: center;
   }
 }
+
+// tablet devices
+
+@media(max-width:1024px)
+{
+  #about{
+    min-height: 0px;
+
+    .header{
+      h1{
+        font-size: 1.25rem;
+      }
+  
+      h3{
+        font-size: .8rem;
+      }
+    }
+
+    .container{
+      min-height: 0px;
+    }
+  }
+}
+
+// mobile devices
+
+@media(max-width:640px)
+{
+
+}

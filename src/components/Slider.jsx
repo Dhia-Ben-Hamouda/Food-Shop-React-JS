@@ -18,10 +18,10 @@ export default function App() {
   return (
     <>
       <Swiper
-        slidesPerView={ window.innerWidth > 768 ? 3 : 1}
+        slidesPerView={ window.innerWidth > 1024 ? 3 : 1}
         spaceBetween={30}
         grabCursor={true}
-        slidesPerGroup={window.innerWidth > 768 ? 3 : 1}
+        slidesPerGroup={window.innerWidth > 1024 ? 3 : 1}
         loop={true}
         loopFillGroupWithBlank={true}
         pagination={{

@@ -9,3 +9,21 @@ footer{
     font-size: 1rem;
   }
 }
+
+// tablet devices
+
+@media(max-width:1024px)
+{
+
+}
+
+// mobile devices
+
+@media(max-width:640px)
+{
+  footer{
+    h3{
+      font-size: .85rem;;
+    }
+  }
+}

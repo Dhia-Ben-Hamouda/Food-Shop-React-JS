@@ -65,17 +65,36 @@
   }
 }
 
+// tablet devices
 
 @media(max-width:1024px)
 {
+  #home{
+    .container{
+      flex-direction: column;
+      justify-content: space-around;
 
+      .wrapper{
+        width:100%;
+      }
+
+      .image{
+        width:100%;
+        justify-content: center;
+
+        img{
+          width:80%;
+        }
+      }
+
+    }
+  }
 }
 
+// mobile devices
 
 @media(max-width:640px)
 {
-  
-
   #home{
     padding:1rem 8vw;
 
