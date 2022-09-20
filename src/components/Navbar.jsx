@@ -9,6 +9,8 @@ import CartItem from "./CartItem.jsx";
 
 export default function () {
   const cartItems = useSelector(state => state.cart.items);
+  const num = useSelector(state => state.cart.quantity);
+  const total = useSelector(state => state.cart.total);
 
   useEffect(() => {
     function toggleAnimation() {
@@ -80,7 +82,9 @@ export default function () {
             <div onClick={handler}>
               <FaShoppingBag className="icon" />
               <div className="num">
-                0
+                {
+                  num
+                }
               </div>
             </div>
           </div>
@@ -112,7 +116,7 @@ export default function () {
           </div>
         </div>
         <div className="bottom">
-          <h3>Total :<span> 244 $</span></h3>
+          <h3>Total :<span> {total} $</span></h3>
           <button>Checkout</button>
         </div>
       </div>
