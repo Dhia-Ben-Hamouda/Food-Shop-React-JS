@@ -47,7 +47,7 @@ export default function () {
       <div className="filter" onClick={closeHandler}></div>
       <nav>
         <div className="website">
-          <img src={burger} alt="" />
+          <img src={burger} alt="burger image" />
           <h1>Food Shop</h1>
         </div>
         <ul className="desktop-list">

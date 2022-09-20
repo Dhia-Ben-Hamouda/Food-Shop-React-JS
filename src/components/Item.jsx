@@ -20,7 +20,7 @@ export default function ({ delay, name, picture, price, id }) {
       {
         window.innerWidth > 768 ? <>
           <div className="item" data-aos="fade-down" data-aos-delay={delay}>
-            <img src={picture} />
+            <img src={picture} alt="item image" />
             <div>
               <h1>{name}</h1>
               <h3>{price} $</h3>

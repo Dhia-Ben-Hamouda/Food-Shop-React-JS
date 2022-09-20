@@ -38,7 +38,7 @@ export default function App() {
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis temporibus, maiores cupiditate et repudiandae iure esse reiciendis numquam deserunt </p>
           </div>
           <div className="bottom">
-            <img src={img1} />
+            <img src={img1} alt="customer image" />
             <h3>Customer name</h3>
           </div>
         </SwiperSlide>
@@ -50,7 +50,7 @@ export default function App() {
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis temporibus, maiores cupiditate et repudiandae iure esse reiciendis numquam deserunt </p>
           </div>
           <div className="bottom">
-            <img src={img2} />
+            <img src={img2} alt="customer image" />
             <h3>Customer name</h3>
           </div>
         </SwiperSlide>
@@ -74,7 +74,7 @@ export default function App() {
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis temporibus, maiores cupiditate et repudiandae iure esse reiciendis numquam deserunt </p>
           </div>
           <div className="bottom">
-            <img src={img4} />
+            <img src={img4} alt="customer image" />
             <h3>Customer name</h3>
           </div>
         </SwiperSlide>
@@ -86,7 +86,7 @@ export default function App() {
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis temporibus, maiores cupiditate et repudiandae iure esse reiciendis numquam deserunt </p>
           </div>
           <div className="bottom">
-            <img src={img5} />
+            <img src={img5} alt="customer image" />
             <h3>Customer name</h3>
           </div>
         </SwiperSlide>
@@ -98,7 +98,7 @@ export default function App() {
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis temporibus, maiores cupiditate et repudiandae iure esse reiciendis numquam deserunt </p>
           </div>
           <div className="bottom">
-            <img src={img6} />
+            <img src={img6} alt="customer image" />
             <h3>Customer name</h3>
           </div>
         </SwiperSlide>
@@ -110,7 +110,7 @@ export default function App() {
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis temporibus, maiores cupiditate et repudiandae iure esse reiciendis numquam deserunt </p>
           </div>
           <div className="bottom">
-            <img src={img7} />
+            <img src={img7} alt="customer image" />
             <h3>Customer name</h3>
           </div>
         </SwiperSlide>
@@ -122,7 +122,7 @@ export default function App() {
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis temporibus, maiores cupiditate et repudiandae iure esse reiciendis numquam deserunt </p>
           </div>
           <div className="bottom">
-            <img src={img8} />
+            <img src={img8} alt="customer image" />
             <h3>Customer name</h3>
           </div>
         </SwiperSlide>
@@ -134,7 +134,7 @@ export default function App() {
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis temporibus, maiores cupiditate et repudiandae iure esse reiciendis numquam deserunt </p>
           </div>
           <div className="bottom">
-            <img src={img9} />
+            <img src={img9} alt="customer image" />
             <h3>Customer name</h3>
           </div>
         </SwiperSlide>

@@ -23,7 +23,7 @@ export default function ({name , id , price , picture , quantity}) {
     <>
       <div className="item">
         <div className="left">
-          <img src={picture} />
+          <img src={picture} alt="cart item" />
           <h3>{name}</h3>
         </div>
         <div className="right">

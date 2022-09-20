@@ -13,13 +13,13 @@ export default function () {
               <h3>Our mission is to filling your tummy with delicious food and with fast and free delivery !</h3>
               <a href="#menu">
                 <h5>Get Started</h5>
-                <img src={vector} alt="" />
+                <img src={vector} alt="arrow image" />
               </a>
             </div>
             
           </div>
           <div className="image" data-aos="fade-left" data-aos-delay="100">
-            <img src={image} alt="" />
+            <img src={image} alt="home image" />
           </div>
         </div>
       </section>
