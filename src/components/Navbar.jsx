@@ -1,5 +1,5 @@
 import React from "react";
-import burger from "../images/burger.png";
+import burger from "../images/logo.png";
 import { FaUser } from "react-icons/fa";
 import { FaShoppingBag } from "react-icons/fa";
 import { useEffect } from "react";
