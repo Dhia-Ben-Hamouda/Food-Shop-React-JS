@@ -62,7 +62,7 @@ export default function App() {
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis temporibus, maiores cupiditate et repudiandae iure esse reiciendis numquam deserunt </p>
           </div>
           <div className="bottom">
-            <img src={img3} />
+            <img src={img3} alt="customer image" />
             <h3>Customer name</h3>
           </div>
         </SwiperSlide>
