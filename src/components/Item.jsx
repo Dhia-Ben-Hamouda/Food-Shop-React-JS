@@ -28,7 +28,7 @@ export default function ({ delay, name, picture, price, id }) {
             <button onClick={add}>Add To Cart</button>
           </div>
         </> : <div className="item">
-          <img src={picture} />
+          <img src={picture} alt="item image" />
           <div>
             <h1>{name}</h1>
             <h3>{price} $</h3>

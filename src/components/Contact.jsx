@@ -47,7 +47,7 @@ export default function () {
             <button>Send message</button>
           </form>
           <div className="illustration" data-aos="fade-left" data-aos-delay="400">
-            <img src={illustration} />
+            <img src={illustration} alt="illustration image" />
           </div>
         </div>
       </section>
